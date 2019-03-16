@@ -4,6 +4,6 @@ RUN pacman -Syu --noconfirm python
 
 RUN mkdir /website
 WORKDIR /website
-COPY index.html videoplayback.mp4 Hannah.jpg ./
+COPY index.html passwords.txt post.php videoplayback.mp4 Hannah.jpg ./
 EXPOSE 8000
 CMD python -m http.server 8000
