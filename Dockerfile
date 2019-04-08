@@ -1,3 +1,7 @@
+FROM justbuchanan/docker-archlinux
+
+RUN pacman -Syu --noconfirm python
+
 RUN mkdir /website
 WORKDIR /website
 COPY * ./
