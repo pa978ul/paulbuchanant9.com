@@ -6,9 +6,11 @@
     {% if site.email %}
 	  <a href="mailto:{{ site.email}}"><i class="fa fa-envelope"></i></a>
     {% endif %}
-
-    {% if site.twitter %}
-	  <a href="http://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i></a>
+    {% if site.youtube %}
+	  <a href="https://www.youtube.com/channel/{{ site.youtube }}"><i class="fa fa-youtube-play"></i></a>
+    {% endif %}
+		  {% if site.twitter %}
+		  <a href="http://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i></a>
     {% endif %}
     {% if site.linkedin %}
 	  <a href="http://linkedin.com/in/{{ site.linkedin }}"><i class="fa fa-linkedin"></i></a>

@@ -28,7 +28,6 @@ COPY *.html *.xml *.txt *.yml ./
 COPY _includes/ _includes/
 COPY _layouts/ _layouts/
 COPY _posts/ _posts/
-COPY _site/ _site/
 COPY assets/ assets/
 COPY static/ static/
 
