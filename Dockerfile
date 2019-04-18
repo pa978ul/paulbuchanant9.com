@@ -31,6 +31,8 @@ COPY _posts/ _posts/
 COPY assets/ assets/
 COPY static/ static/
 
+RUN jekyll build
+
 # Run jekyll server on port 3000
 EXPOSE 3000
 CMD ["jekyll", "serve", "--host=0.0.0.0", "--port=3000"]
