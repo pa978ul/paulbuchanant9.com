@@ -17,7 +17,7 @@ WORKDIR /website
 COPY Gemfile Gemfile.lock ./
 
 # Install the version of bundler specified in Gemfile.lock
-RUN gem install bundler -v 1.16.1
+RUN gem install bundler -v 1.17.1
 
 # Install jekyll and all of its required dependencies. These are specified in
 # the "Gemfile" and "Gemfile.lock" files.
@@ -30,6 +30,8 @@ COPY _layouts/ _layouts/
 COPY _posts/ _posts/
 COPY assets/ assets/
 COPY static/ static/
+
+RUN jekyll build
 
 # Run jekyll server on port 3000
 EXPOSE 3000
