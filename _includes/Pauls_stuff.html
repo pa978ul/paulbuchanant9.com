@@ -3,21 +3,35 @@
   <h3>Pauls_stuff</h3>
   <div class="panel panel-default">
     <div class="panel-body">
-        <h3>
-        links
-        
-        </br>
-        </br>
-        
-      
+      <script type="text/javascript">
+        function button_pressed() {
+          var box = document.getElementById("password_box");
+          
 
-        </br>
-        </br>
-        </ul>
 
-        </br>
+          if (box.value == '5821') {
+            // correct password, show stuff
+            var hidden = document.getElementById('hidden_container')
+            hidden.style.visibility = 'visible';
+          } else {
+            // incorrect password
+            // TODO: alert wrong password
+          }
 
-        </h3>
+        }
+      </script>
+
+
+      <input type="text" id="password_box" placeholder="password">
+      <input value="show stuff" onclick="button_pressed()" type="button">
+
+
+
+
+        <div id="hidden_container" style="visibility: hidden;">
+          <h3>links</h3>
+        </div>
+  
 
     </div>
   </div>
