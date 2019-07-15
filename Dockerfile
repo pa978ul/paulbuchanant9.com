@@ -17,7 +17,7 @@ WORKDIR /website
 COPY Gemfile Gemfile.lock ./
 
 # Install the version of bundler specified in Gemfile.lock
-RUN gem install bundler -v 1.17.1
+RUN gem install bundler -v 2.0.2
 
 # Install jekyll and all of its required dependencies. These are specified in
 # the "Gemfile" and "Gemfile.lock" files.
